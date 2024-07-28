@@ -1,3 +1,5 @@
+import 'dart:js_interop';
+
 import 'package:flutter/material.dart';
 
 class Box extends StatefulWidget {
@@ -8,35 +10,40 @@ class Box extends StatefulWidget {
 }
 
 class _BoxState extends State<Box> {
-  bool boxcolor=false;
+  bool boxcolor=true;
 
-  void Changecolor(){
-    setState(() {
-      if (boxcolor) {
-        boxcolor=false;
-      } else {
-        boxcolor=true;
-      }
-    });
-  }
+ 
   @override
   Widget build(BuildContext context) {
+    print("build method called");
     return Scaffold(
       appBar: AppBar(
         title: Text("Box color"),
       ),
-      body: Center(
-         child: InkWell(
-           child: Container(
-            height: 100,
-            width: 100,
-            color: boxcolor?Colors.amber:Colors.deepOrangeAccent,
-           ),
-           onTap: () {
-             Changecolor();
-           },
-         ),
+      body:Column(
+        children: [
+          Container(
+            height: 200,
+            width: 200,
+            color:boxcolor ? Colors.red : Colors.green,
+          ),
+        ],
       ),
-    );
+      floatingActionButton: FloatingActionButton(onPressed: () {
+        print("button pressed");
+        if (boxcolor) {
+          boxcolor=false;
+        } else {
+          boxcolor=true;
+        }
+        setState(() {
+          
+        });
+      },
+      backgroundColor:boxcolor ? Colors.red : Colors.blue,
+      ),
+           );
+          
+        
   }
 }
