@@ -6,6 +6,10 @@ class screen1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Instagram",
+        style: TextStyle(fontStyle: FontStyle.italic),),
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [

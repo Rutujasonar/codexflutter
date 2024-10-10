@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "802828675442",
+    "project_id": "fir-c992a",
+    "storage_bucket": "fir-c992a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802828675442:android:ed607c184381b581fad5eb",
+        "android_client_info": {
+          "package_name": "com.example.ffirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfalJ7v92T2hM2j1q5eBnu0u1i6V4zpMk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
